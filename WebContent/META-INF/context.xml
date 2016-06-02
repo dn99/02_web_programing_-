@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context privileged="true" reloadable="true">
+
+	<Resource name="jdbc/bnc" auth="Container"
+		      type="javax.sql.DataSource"
+		      factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory"
+		      driverClassName="oracle.jdbc.driver.OracleDriver"
+		      url="jdbc:oracle:thin:@211.238.142.203:1521:orcl" username="bnc"
+		      password="bnc" maxActive="20" maxIdle="10" maxWait="-1"
+		      removeAbandoned="true" removeAbandonedTimeout="60"
+		      logAbandoned="true" />
+
+    <!-- Default set of monitored resources -->
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+
+</Context>

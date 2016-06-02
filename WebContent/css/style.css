@@ -1,0 +1,240 @@
+.bg_top { 
+background-image: url(/BNCRent/images/top_bg.gif);
+background-repeat: repeat-x;
+background-position: top;
+}
+.bg_middle { 
+background-image: url(/BNCRent/images/top_menu_bottom_bg.png);
+background-repeat: repeat-x;
+background-position: top;
+}
+.bg_bottom { 
+background-image: url(/BNCRent/images/bottom_bg.gif);
+background-repeat: repeat-x;
+background-position: top;
+}
+
+/*--------------------------------- ?? CSS ------------------------------------*/
+A:link {
+	COLOR: #555555; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #555555; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #555555; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+
+BODY {
+	MARGIN: 0px;
+	/*
+	scrollbar-face-color: #C5B094; scrollbar-shadow-color:#615034 ;scrollbar-highlight-color: #E9DCCC;
+	scrollbar-3dlight-color: #C5B094; scrollbar-darkshadow-color: #C5B094;
+	scrollbar-track-color: #E9DCCC; scrollbar-arrow-color: #615034; 
+	*/
+}
+BODY,TABLE,TD {
+	FONT-SIZE: 12px; COLOR: #777777; LINE-HEIGHT: 18px; FONT-FAMILY: "±¼¸²", "±¼¸²Ã¼"; LETTER-SPACING: -0.8pt
+}
+IMG {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+P {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; LINE-HEIGHT: 125%
+}
+INPUT {
+	BORDER: #bbbbbb 1px solid; BACKGROUND-COLOR: #F4F4F4; FONT-SIZE: 12px; COLOR: #555555
+}
+SELECT {
+	BORDER-RIGHT: #bbbbbb 1px solid; BACKGROUND-COLOR: #F4F4F4; FONT-SIZE: 12px; COLOR: #555555
+}
+TEXTAREA {
+	PADDING: 6px; BORDER: #bbbbbb 1px solid; BACKGROUND-COLOR: #F4F4F4; FONT-SIZE: 12px; COLOR: #555555; LINE-HEIGHT: 18px
+}
+
+/*--------------------------------- ??? ????? ------------------------------------*/
+A.small:link {
+	COLOR: #888888; FONT-SIZE: 11px; FONT-FAMILY: "????"
+}
+A.small:visited {
+	COLOR: #888888; FONT-SIZE: 11px; FONT-FAMILY: "????"
+}
+A.small:active {
+	COLOR: #888888; FONT-SIZE: 11px; FONT-FAMILY: "????"
+}
+A.small:hover {
+	COLOR: #000000; FONT-SIZE: 11px; FONT-FAMILY: "????"
+}
+
+A.bbs1:link {
+	COLOR: #555555
+}
+A.bbs1:visited {
+	COLOR: #555555
+}
+A.bbs1:active {
+	COLOR: #555555
+}
+A.bbs1:hover {
+	COLOR: #1891CD
+}
+A.bbs2:link {
+	COLOR: #555555
+}
+A.bbs2:visited {
+	COLOR: #555555
+}
+A.bbs2:active {
+	COLOR: #555555
+}
+A.bbs2:hover {
+	COLOR: #ED9100
+}
+A.bbs4:link {
+	COLOR: #555555
+}
+A.bbs4:visited {
+	COLOR: #555555
+}
+A.bbs4:active {
+	COLOR: #555555
+}
+A.bbs4:hover {
+	COLOR: #5A9900
+}
+A.bbs5:link {
+	COLOR: #555555
+}
+A.bbs5:visited {
+	COLOR: #555555
+}
+A.bbs5:active {
+	COLOR: #555555
+}
+A.bbs5:hover {
+	COLOR: #009999
+}
+
+A.mainMenu:link {
+	FONT-SIZE: 14px; COLOR: #888888; FONT-WEIGHT: bold
+}
+A.mainMenu:visited {
+	FONT-SIZE: 14px; COLOR: #888888; FONT-WEIGHT: bold
+}
+A.mainMenu:active {
+	FONT-SIZE: 14px; COLOR: #888888; FONT-WEIGHT: bold
+}
+A.mainMenu:hover {
+	FONT-SIZE: 14px; COLOR: #ce3500; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+
+/*--------------------------------- ???? ????? ------------------------------------*/
+.small {
+	FONT-SIZE: 11px; FONT-FAMILY: "????"; LETTER-SPACING: -0.8pt
+}
+.txt {
+	LETTER-SPACING: -0.2pt
+}
+.txt_navi_loca {
+	COLOR: #CC6633
+}
+.txt_point {
+	COLOR: #8B4900
+}
+.txt_point1 {
+	COLOR: #EF7600
+}
+.txt_bold {
+	FONT-WEIGHT: bold
+}
+.txt_head {
+	COLOR: #3C60B1; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+.txt_point {
+	COLOR: #CC3300; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.txt_name {
+	COLOR: #888888; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.txt_tit {
+	FONT-SIZE: 21px; FONT-WEIGHT: bold
+}
+.txt_contents {
+	TEXT-ALIGN: justify
+}
+.txt_date {
+	COLOR: #6887AC 
+}
+.bbs_white_bold {
+	COLOR: #FFFFFF; FONT-WEIGHT: bold
+}
+.bbs_white {
+	COLOR: #FFFFFF
+}
+.bbs1 {
+	COLOR: #1891CD
+}
+.bbs2 {
+	COLOR: #ED9100
+}
+.bbs4{
+	COLOR: #5A9900
+}
+.bbs5{
+	COLOR: #009999
+}
+
+/*--------------------------------- ???? ????? ------------------------------------*/
+.padding {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.padding5 { PADDING: 5px }
+.padding10 { PADDING: 10px }
+.padding20 { PADDING: 20px }
+.left5 { PADDING-LEFT: 5px }
+.left10 { PADDING-LEFT: 10px }
+.left15 { PADDING-LEFT: 15px }
+.left20 { PADDING-LEFT: 20px }
+.right10 { PADDING-LEFT: 10px }
+.right15 { PADDING-LEFT: 15px }
+.right20 { PADDING-LEFT: 20px }
+
+/*--------------------------------- ?? ????? ------------------------------------*/
+.input_dark {
+	FONT-SIZE: 12px; FONT-FAMILY: "±¼¸²", "±¼¸²Ã¼"; COLOR: #999999; BORDER: 1px solid #444444; BACKGROUND-COLOR: #222222; HEIGHT: 22
+}
+.select_dark {
+	FONT-SIZE: 12px; FONT-FAMILY: "±¼¸²", "±¼¸²Ã¼"; COLOR: #999999; BORDER: 1px solid #444444; BACKGROUND-COLOR: #222222
+}
+.textarea_dark {
+	PADDING: 6px; FONT-SIZE: 12px; FONT-FAMILY: "±¼¸²", "±¼¸²Ã¼"; COLOR: #999999; BORDER: 1px solid #444444; BACKGROUND-COLOR: #222222
+}
+.checkbox_trans {
+    BORDER: 0px; BACKGROUND-COLOR: transparent
+}
+
+.input2 {
+	FONT-SIZE: 12px; COLOR: #222222; FONT-FAMILY: "±¼¸²", "±¼¸²Ã¼"; BACKGROUND-COLOR: #C5B094
+}
+.select2 {
+	FONT-SIZE: 12px; COLOR: #222222; FONT-FAMILY: "????"; BACKGROUND-COLOR: #C5B094
+}
+.textarea2 {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 12px; PADDING-BOTTOM: 10px; COLOR: #222222; PADDING-TOP: 10px; FONT-FAMILY: "±¼¸²", "±¼¸²Ã¼"; BACKGROUND-COLOR: #f6f6f6
+}
+
+
+/*Æû*/
+.form_01 {
+	BORDER-RIGHT: #D5D3D6 1px solid;
+	BORDER-TOP: #D5D3D6 1px solid;
+	FONT-SIZE: 8pt;
+	BORDER-LEFT: #D5D3D6 1px solid;
+	COLOR: #5D5D5D;
+	BORDER-BOTTOM: #D5D3D6 1px solid;
+	face: ±¼¸²;
+	font-family: "±¼¸²";
+}

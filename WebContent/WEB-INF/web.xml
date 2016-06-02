@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+	<display-name>BNCRent</display-name>
+	<description>BNCRent Application</description>
+	
+	<!-- Http Flex Session attribute and binding listener support -->
+	<listener>
+		<listener-class>flex.messaging.HttpFlexSession</listener-class>
+	</listener>
+	
+	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.FilterDispatcher</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>Encoding Filter</filter-name>
+		<filter-class>com.bnc.util.EncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>EUC_KR</param-value>
+		</init-param>
+	</filter>
+		
+	<filter-mapping>
+		<filter-name>Encoding Filter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<context-param>
+		<param-name>environment</param-name>
+		<param-value>alice</param-value>
+	</context-param>
+	
+	<!-- MessageBroker Servlet -->
+	<servlet>
+		<display-name>MessageBrokerServlet</display-name>
+		<servlet-name>MessageBrokerServlet</servlet-name>
+		<servlet-class>flex.messaging.MessageBrokerServlet</servlet-class>
+		<init-param>
+			<param-name>services.configuration.file</param-name>
+			<param-value>/WEB-INF/flex/services-config.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<description></description>
+		<display-name>MemberController</display-name>
+		<servlet-name>MemberController</servlet-name>
+		<servlet-class>com.bnc.member.controller.MemberController</servlet-class>
+	</servlet>
+	<servlet>
+		<description></description>
+		<display-name>TravelController</display-name>
+		<servlet-name>TravelController</servlet-name>
+		<servlet-class>com.bnc.travel.controller.TravelController</servlet-class>
+	</servlet>
+	<servlet>
+		<description></description>
+		<display-name>FileUpController</display-name>
+		<servlet-name>FileUpController</servlet-name>
+		<servlet-class>com.bnc.travel.controller.FileUpController</servlet-class>
+	</servlet>
+	<servlet>
+		<description></description>
+		<display-name>CommonController</display-name>
+		<servlet-name>CommonController</servlet-name>
+		<servlet-class>com.bnc.common.controller.CommonController</servlet-class>
+	</servlet>
+	<servlet>
+		<description></description>
+		<display-name>CarUpController</display-name>
+		<servlet-name>CarUpController</servlet-name>
+		<servlet-class>com.bnc.rentcar.controller.CarUpController</servlet-class>
+	</servlet>
+	<servlet>
+		<description></description>
+		<display-name>CarListController</display-name>
+		<servlet-name>CarListController</servlet-name>
+		<servlet-class>com.bnc.rentcar.controller.CarListController</servlet-class>
+	</servlet>
+	<servlet>
+		<description></description>
+		<display-name>CommunityController</display-name>
+		<servlet-name>CommunityController</servlet-name>
+		<servlet-class>com.bnc.community.controller.CommunityController</servlet-class>
+	</servlet>
+	<servlet>
+		<description></description>
+		<display-name>ReserveController</display-name>
+		<servlet-name>ReserveController</servlet-name>
+		<servlet-class>com.bnc.reserve.controller.ReserveController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>alice-upload</servlet-name>
+		<servlet-class>com.jakartaproject.alice.UploadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>CustomerController</display-name>
+		<servlet-name>CustomerController</servlet-name>
+		<servlet-class>com.bnc.customer.controller.CustomerController</servlet-class>
+	</servlet>
+	
+	<!-- begin rds <servlet> <servlet-name>RDSDispatchServlet</servlet-name> 
+		<display-name>RDSDispatchServlet</display-name> <servlet-class>flex.rds.server.servlet.FrontEndServlet</servlet-class> 
+		<init-param> <param-name>useAppserverSecurity</param-name> <param-value>true</param-value> 
+		</init-param> <load-on-startup>10</load-on-startup> </servlet> <servlet-mapping 
+		id="RDS_DISPATCH_MAPPING"> <servlet-name>RDSDispatchServlet</servlet-name> 
+		<url-pattern>/CFIDE/main/ide.cfm</url-pattern> </servlet-mapping> end rds -->
+	
+	<servlet-mapping>
+		<servlet-name>MessageBrokerServlet</servlet-name>
+		<url-pattern>/messagebroker/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>MemberController</servlet-name>
+		<url-pattern>/memberctrl</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>TravelController</servlet-name>
+		<url-pattern>/travel</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FileUpController</servlet-name>
+		<url-pattern>/fileup</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CommonController</servlet-name>
+		<url-pattern>/common</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CarUpController</servlet-name>
+		<url-pattern>/carup</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CarListController</servlet-name>
+		<url-pattern>/carlist</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>CommunityController</servlet-name>
+		<url-pattern>/comctrl</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ReserveController</servlet-name>
+		<url-pattern>/reserve</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>alice-upload</servlet-name>
+		<url-pattern>/alice-upload</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CustomerController</servlet-name>
+		<url-pattern>/cusctrl</url-pattern>
+	</servlet-mapping>
+	
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+	</welcome-file-list>
+	
+	<!-- for WebSphere deployment, please uncomment -->
+	<!-- <resource-ref> <description>Flex Messaging WorkManager</description> 
+		<res-ref-name>wm/MessagingWorkManager</res-ref-name> <res-type>com.ibm.websphere.asynchbeans.WorkManager</res-type> 
+		<res-auth>Container</res-auth> <res-sharing-scope>Shareable</res-sharing-scope> 
+		</resource-ref> -->
+	
+</web-app>
